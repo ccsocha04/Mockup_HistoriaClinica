@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
 	<meta name="author" content="AdminKit">
-	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	<meta name="keywords"
+		content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
@@ -36,8 +37,8 @@
 							<div class="card-body">
 								<div class="m-sm-4">
 									<div class="text-center">
-										<img src="img/logos/gobernacion.png" alt="Charles Hall"
-											class="img-fluid" width="297" height="99" />
+										<img src="img/logos/gobernacion.png" alt="Charles Hall" class="img-fluid"
+											width="297" height="99" />
 									</div>
 									<form>
 										<div class="mb-3">
@@ -62,10 +63,10 @@
 												</span>
 											</label>
 										</div> -->
-										<div class="text-center mt-3">
-											<a href="index.html" class="btn btn-lg btn-primary">Ingresar</a>
-											<!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
-										</div>
+											<div class="text-center mt-3">
+												<a href="#modal-window" class="btn btn-lg btn-primary">Ingresar</a>
+												<!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
+											</div>
 
 									</form>
 								</div>
@@ -76,6 +77,59 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="container d-flex flex-column">
+			<div class="row vh-100">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+					<div class="d-table-cell align-middle">
+						<div id="modal-window" class="modal">
+							<div class="modal-content">
+								<div class="card">
+									<div class="card-body">
+										<div class="m-sm-4">
+											<div class="text-center">
+												<img src="img/logos/gobernacion.png" alt="Charles Hall"
+													class="img-fluid" width="297" height="99" />
+											</div>
+											<form>
+												<div class="mb-3">
+													<label class="form-label">Tipo Documento</label>
+													<select class="form-select form-select-lg">
+														<option value="0" selected>Cédula Ciudadania</option>
+														<option value="1">Cédula Extranjeria</option>
+														<option value="2">Pasaporte</option>
+														<option value="3">Registro Civil</option>
+														<option value="4">Tarjeta Identidad</option>
+														<option value="5">Adulto Sin Identificación</option>
+														<option value="6">Menor Sin Identificación</option>
+														<option value="7">Número Único Identificación</option>
+													</select>
+												</div>
+												<div class="mb-3">
+													<label class="form-label">Documento</label>
+													<input class="form-control form-control-lg" type="number"
+														name="documentNumber"
+														placeholder="Ingrese el numero de documento" />
+												</div>
+												<div>
+													<div class="text-center mt-3">
+														<a href="dashboard.html"
+															class="btn btn-lg btn-primary">Consultar</a>
+														<!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
+													</div>
+												</div>
+	
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</main>
 
 	<script src="js/app.js"></script>
